@@ -13,7 +13,7 @@ class LibtiffConan(ConanFile):
     default_options = "shared=False"
     requires = "zlib/1.2.11@conan/stable"
     exports = ["CMakeLists.txt", "FindTIFF.cmake"]
-    url="http://github.com/bilke/conan-tiff"
+    url="http://github.com/ZaMaZaN4iK/conan-tiff"
     license="http://www.remotesensing.org/libtiff/"
 
     def source(self):
