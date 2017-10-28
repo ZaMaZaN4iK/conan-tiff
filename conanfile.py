@@ -6,7 +6,7 @@ class LibtiffConan(ConanFile):
     name = "libtiff"
     description = """Library for Tag Image File Format (TIFF), a widely used
                      format for storing image data"""
-    version = "4.0.6"
+    version = "4.0.8"
     generators = "cmake"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
