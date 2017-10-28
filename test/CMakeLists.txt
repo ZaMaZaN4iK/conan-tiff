@@ -9,3 +9,6 @@ include_directories(${TIFF_INCLUDE_DIRS})
 add_executable(tifftest tifftest.c)
 
 target_link_libraries(tifftest ${CONAN_LIBS})
+if(UNIX AND NOT APPLE)
+    target_link_libraries(tifftest m)
+endif()
