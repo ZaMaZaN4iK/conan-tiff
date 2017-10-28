@@ -17,8 +17,8 @@ class LibtiffConan(ConanFile):
     license="http://www.remotesensing.org/libtiff/"
 
     def source(self):
-		own_version = self.version
-		own_version.replace('.', '-')
+        own_version = self.version
+        own_version.replace('.', '-')
         zip_name = "Release-v%s.zip" % own_version
         download("https://github.com/vadz/libtiff/archive/%s" % zip_name , zip_name)
         unzip(zip_name)
